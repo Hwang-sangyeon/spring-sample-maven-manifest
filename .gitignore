@@ -1,0 +1,7 @@
+# secret이 포함된 모든 yaml 파일 (대소문자 구분 있음)
+*secret*.yaml
+*secret*.yml
+
+# Secret, SECRET 등 대소문자 다양하게 쓴다면 각각 추가
+*Secret*.yaml
+*SECRET*.yaml
