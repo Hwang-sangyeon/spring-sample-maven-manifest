@@ -20,18 +20,6 @@ spec:
       containers:
       - name: was-cluster
         image: syhwang.harbor.com/spring-sample-maven/spring-sample:latest
-        #livenessProbe:
-        #  httpGet:
-        #    path: /index.jsp
-        #    port: 8180
-        #  initialDelaySeconds: 20
-        #  periodSeconds: 5
-        #readinessProbe:
-        #  httpGet:
-        #    path: /index.jsp
-        #    port: 8180
-        #  initialDelaySeconds: 10
-        #  periodSeconds: 3
         ports:
         - containerPort: 8180
         envFrom:
@@ -39,11 +27,4 @@ spec:
             name: was-cluster-config
         - secretRef:
             name: was-cluster-secret
-#        volumeMounts:
-#        - name: lena-app-pv
-#          mountPath: /usr/local/lena/servers/appServer/logs
-#      volumes:
-#        - name: lena-app-pv
-#          persistentVolumeClaim:
-#            claimName: lena-app-pvc
       terminationGracePeriodSeconds: 60
