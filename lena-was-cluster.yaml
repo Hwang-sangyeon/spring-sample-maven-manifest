@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: was-cluster
-        image: syhwang.harbor.com/spring-sample-maven/spring-sample:20
+        image: syhwang.harbor.com/spring-sample-maven/spring-sample:20260828-22-c15cc4a
         ports:
         - containerPort: 8180
         envFrom:
